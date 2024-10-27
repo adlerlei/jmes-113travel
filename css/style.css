@@ -1,0 +1,88 @@
+.custom-rounded {
+    border-radius: 20px;
+    /* 調整這個值來改變圓角大小 */
+}
+
+.info {
+    color: #ced4da;
+}
+
+.title {
+    color: #6a994e;
+}
+
+/*
+.column.b-img {
+    position: relative;
+    min-height: 100%;
+    background-image: url('../images/集美國小旅遊行程.png') !important;
+    background-size: 100% auto;  /* 修改這裡：寬度 100%，高度自動調整 */
+/* background-position: bottom;
+    background-repeat: no-repeat; */
+
+
+.timeline.box.b-img {
+    position: relative;
+    min-height: 550px;
+    /* 使用 linear-gradient 創建漸層效果 */
+    background-image:
+        linear-gradient(to bottom,
+            rgba(255, 255, 255, 1) 0%,
+            /* 上方完全白色（透明） */
+            rgba(255, 255, 255, 0.8) 20%,
+            /* 漸漸變透明 */
+            rgba(255, 255, 255, 0) 100%
+            /* 下方完全顯示圖片 */
+        ),
+        url('../images/集美國小旅遊行程.png') !important;
+    background-size: 100% auto;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+/* 確保時間軸內容在背景之上 */
+.timeline-item,
+.timeline-header,
+.timeline-marker {
+    position: relative;
+    z-index: 1;
+}
+
+/* 彈出視窗 */
+/* 確保 modal 在最上層 */
+.modal {
+    z-index: 9999 !important;
+}
+
+.modal-background {
+    z-index: 10000 !important;
+}
+
+.modal-content {
+    z-index: 10001 !important;
+    max-width: 90vw;
+    margin: 0 auto;
+    position: relative;
+}
+
+.modal-close {
+    z-index: 10002 !important;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* 優化圖片顯示 */
+.modal-content .box {
+    position: relative;
+    padding: 0;
+    background-color: transparent;  /* 移除 box 的背景 */
+}
+
+.modal-content .image img {
+    max-height: 90vh;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+}
