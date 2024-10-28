@@ -11,34 +11,17 @@
     color: #6a994e;
 }
 
-/*
-.column.b-img {
-    position: relative;
-    min-height: 100%;
-    background-image: url('../images/集美國小旅遊行程.png') !important;
-    background-size: 100% auto;  /* 修改這裡：寬度 100%，高度自動調整 */
-/* background-position: bottom;
-    background-repeat: no-repeat; */
-
-
-.timeline.box.b-img {
-    position: relative;
-    min-height: 550px;
-    /* 使用 linear-gradient 創建漸層效果 */
-    background-image:
-        linear-gradient(to bottom,
-            rgba(255, 255, 255, 1) 0%,
-            /* 上方完全白色（透明） */
-            rgba(255, 255, 255, 0.8) 20%,
-            /* 漸漸變透明 */
-            rgba(255, 255, 255, 0) 100%
-            /* 下方完全顯示圖片 */
-        ),
-        url('../images/集美國小旅遊行程.png') !important;
-    background-size: 100% auto;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    z-index: 0;
+@keyframes flash {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+.flashing-text {
+    animation: flash 1s infinite;
 }
 
 /* 確保時間軸內容在背景之上 */
@@ -77,7 +60,8 @@
 .modal-content .box {
     position: relative;
     padding: 0;
-    background-color: transparent;  /* 移除 box 的背景 */
+    background-color: transparent;
+    /* 移除 box 的背景 */
 }
 
 .modal-content .image img {
