@@ -23,9 +23,7 @@
 .flashing-text {
     animation: flash 1s infinite;
 }
-.flashing-text-5m {
-    animation: blink 5000ms infinite; /* 每 5 秒循環一次 */
-}
+
 
 /* 確保時間軸內容在背景之上 */
 .timeline-item,
